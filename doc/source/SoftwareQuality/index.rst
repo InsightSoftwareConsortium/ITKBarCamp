@@ -1,17 +1,11 @@
-Community Software Process
-==========================
+Software Quality
+================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   UnitTesting.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   Wanted.rst

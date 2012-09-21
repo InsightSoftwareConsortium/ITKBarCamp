@@ -1,18 +1,18 @@
-.. ITKBarCamp documentation master file, created by
-   sphinx-quickstart on Fri Sep 21 11:28:59 2012.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to the ITK Bar Camp
+===========================
 
-Welcome to ITKBarCamp's documentation!
-======================================
-
-This is a training ground for the Next Generation of ITK Community members.
+This is a training ground for the Next Generation of ITK Community Members.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   CommunitySoftwareProcess/index.rst
+   Cxx/index.rst
+   ImageProcessing/index.rst
+   ITK/index.rst
+   SoftwareQuality/index.rst
 
 
 Indices and tables

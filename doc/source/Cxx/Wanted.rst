@@ -1,19 +1,28 @@
+Wanted Units
+============
 
 * Hello World
-** Editors, Compiliers
+
+  * Editors, Compiliers
+
 * Basic Tools Debuggers
-** Linux
-** Windows
-** Mac
+
+  * Linux
+  * Windows
+  * Mac
+
 * Object Oriented Design
-** Classes
-** Polymorphism
-** Is vs Has
+
+  * Classes
+  * Polymorphism
+  * Is vs Has
+
 * Templates
 * Exceptions
 * Assert
 * Macros
 * Design Patterns
-** Visitor
-** Facade
+
+  * Visitor
+  * Facade
 

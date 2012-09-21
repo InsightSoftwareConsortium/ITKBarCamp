@@ -1,4 +1,4 @@
-Community Software Process
+C++ Development
 ==========================
 
 Contents:
@@ -6,12 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   HelloWorld.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Wanted.rst
 
