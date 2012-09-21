@@ -6,6 +6,8 @@
 Welcome to ITKBarCamp's documentation!
 ======================================
 
+This is a training ground for the Next Generation of ITK Community members.
+
 Contents:
 
 .. toctree::
