@@ -30,7 +30,7 @@ Next, commit and push the built HTML::
 
   cd build/html
   git add *
-  git commit -m "Build on $(date) of $(git rev-parse --short HEAD)."
+  git commit -m "Build on $(date) of $(cd ..; git rev-parse --short HEAD)."
   git push
 
 .. _Sphinx: http://sphinx.pocoo.org
