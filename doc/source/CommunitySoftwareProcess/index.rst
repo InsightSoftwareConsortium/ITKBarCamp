@@ -6,5 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   TestAReleaseCandidate/index.rst
+
    Wanted.rst
 
