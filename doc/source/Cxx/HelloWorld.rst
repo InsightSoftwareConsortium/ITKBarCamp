@@ -3,8 +3,7 @@ Hello World
 
 Description
 -----------
-
-This page provides a minimal example of C++ code.
+  This page provides a minimal example of C++ code.
 
 Examples
 --------

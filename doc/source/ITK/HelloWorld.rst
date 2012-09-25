@@ -3,8 +3,7 @@ Hello World
 
 Description
 -----------
-
-Your first ITK program.
+  Your first ITK program.
 
 Code
 ----
