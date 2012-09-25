@@ -14,6 +14,8 @@ Contents:
    ITK/index.rst
    SoftwareQuality/index.rst
 
+   host.rst
+
 
 Indices and tables
 ==================
