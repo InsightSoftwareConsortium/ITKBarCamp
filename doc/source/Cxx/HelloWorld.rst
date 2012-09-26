@@ -21,3 +21,10 @@ Examples
     }
 
 
+Video
+-----
+
+You can see the video of this example at:
+
+   .. youtube:: ZZ56hu9pKG4
+
