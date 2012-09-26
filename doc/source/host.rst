@@ -3,6 +3,8 @@ How to host an ITK Bar Camp
 
 .. image:: images/marshmallow.jpg
 
+This document describes how to host an ITK Bar Camp session.
+
 Sphinx documentation
 --------------------
 
