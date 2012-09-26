@@ -1,3 +1,5 @@
+.. index:: hello world
+
 Hello World
 ===========
 

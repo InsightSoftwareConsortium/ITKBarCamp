@@ -9,7 +9,7 @@ This is a training ground for `The Next Generation`_ of ITK_ Community Members.
 The Insight Toolkit (ITK_) is a medical image analysis toolkit written in C++
 that has wrappings for many other languages.  This page contains supporting
 material and archives of ITK Bar Camp Hangouts where members gather to discuss
-topics such as community contribution, programming C++, image processing and
+topics such as community contribution, programming in C++, image processing and
 analysis theory and practice, quality software practices, and working with ITK.
 
 To take part in the hangouts, follow the `ITK Bar Camp Google+ page`_ with your
