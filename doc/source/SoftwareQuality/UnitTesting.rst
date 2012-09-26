@@ -13,8 +13,8 @@ Here is the test for a Calculator class.
 
 ::
 
-    -include <iostream>
-    -include "Calculator.hxx"
+    #include <iostream>
+    #include "Calculator.h"
 
     int main()
     {
