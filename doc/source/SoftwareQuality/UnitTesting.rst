@@ -1,3 +1,5 @@
+.. index:: testing, unit testing
+
 Unit Testing
 ============
 

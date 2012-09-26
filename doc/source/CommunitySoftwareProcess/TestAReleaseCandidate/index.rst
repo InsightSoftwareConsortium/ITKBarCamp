@@ -1,3 +1,5 @@
+.. index:: release candidate, rc
+
 Test a Release Candidate
 ========================
 

@@ -1,5 +1,5 @@
-Wanted Units
-============
+Wanted Sessions
+===============
 
 * Unit Testing
 * Code Coverage
@@ -9,10 +9,13 @@ Wanted Units
 * Dashboard Submission
 * Cronjob for Nightly testing
 * Clean Code Practices
-** Naming Variables
-** Naming Functions
-** Functions do ONE THING and ONE THING ONLY
+
+  * Naming Variables
+  * Naming Functions
+  * Functions do ONE THING and ONE THING ONLY
+
 * Documentation
-** Using Doxygen
-** Basic
+
+  * Using Doxygen
+  * Basic
 
