@@ -10,6 +10,11 @@ Description
   final release.  This session describes how to test and provide feedback for an
   RC.
 
+Recorded Hangout
+----------------
+
+.. youtube:: -QNJ1EDs0V8
+
 Getting the code
 ----------------
 
