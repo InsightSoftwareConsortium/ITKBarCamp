@@ -7,5 +7,6 @@ Contents:
    :maxdepth: 2
 
    HelloWorld.rst
+   WhatsNewInRelease4.2.1.rst
 
    Wanted.rst
