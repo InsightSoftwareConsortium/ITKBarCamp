@@ -86,8 +86,6 @@ Exercise
 
 Improve the following code by using typedef's::
 
-  // Create and setup a reader
-  typedef itk::ImageFileReader< itk::Image< unsigned char, 2 > >  ReaderType;
   itk::ImageFileReader< itk::Image< unsigned char, 2 > >::Pointer reader =
     itk::ImageFileReader< itk::Image< unsigned char, 2 > >::New();
   reader->SetFileName( argv[1] );
@@ -128,6 +126,11 @@ Answer::
   writer->SetFileName( argv[2] );
   writer->SetInput( edgeStrengthFilter->GetOutput() );
   writer->Update();
+
+Video
+-----
+
+.. youtube:: 2az2esjo19U
 
 
 .. _typedef: http://www.cplusplus.com/doc/tutorial/other_data_types/
