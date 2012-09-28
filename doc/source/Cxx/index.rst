@@ -8,6 +8,7 @@ Contents:
 
    HelloWorld.rst
    CommandLineArguments.rst
+   Macros.rst
 
    Wanted.rst
 
