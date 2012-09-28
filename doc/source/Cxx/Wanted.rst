@@ -20,7 +20,6 @@ Wanted Sessions
 * Templates
 * Exceptions
 * Assert
-* Macros
 * Design Patterns
 
   * Visitor
