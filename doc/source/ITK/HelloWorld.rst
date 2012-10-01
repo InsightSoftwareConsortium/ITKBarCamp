@@ -10,7 +10,7 @@ Description
 Code
 ----
 
-hello-itk.cxx::
+*hello-itk.cxx*::
 
   #include "itkImage.h"
 
@@ -23,7 +23,9 @@ hello-itk.cxx::
     return EXIT_SUCCESS;
   }
 
-CMakeLists.txt::
+*CMakeLists.txt*:
+
+.. code-block:: cmake
 
   cmake_minimum_required( VERSION 2.8 )
   enable_testing()
@@ -34,3 +36,8 @@ CMakeLists.txt::
   add_executable( hello-itk hello-itk.cxx )
   target_link_libraries( hello-itk ${ITK_LIBRARIES} )
   add_test( hello-itk-test hello-itk )
+
+Video for Ubuntu 12.04.1 with GCC and Eclipse
+---------------------------------------------
+
+.. youtube:: VfB6ue6HLMA
