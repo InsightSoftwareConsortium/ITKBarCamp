@@ -1,7 +1,7 @@
 .. index:: ! video processing 
 
 Video Processing Using ITK-OpenCVBridge module
-===========
+==============================================
 
 Description
 -----------
@@ -9,8 +9,8 @@ Description
 
 Code
 ----
-*BasicVideoFilteringEx1.cxx*
-::
+*BasicVideoFilteringEx1.cxx*::
+
   #include <iostream>
 
   #include <opencv2/imgproc/imgproc.hpp>

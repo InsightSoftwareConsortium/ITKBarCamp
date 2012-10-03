@@ -1,5 +1,5 @@
 .. index::
-  pair: release announcement, v4.2.1
+  pair: release announcement; v4.2.1
 
 What's New in Release 4.2.1
 ===========================
@@ -65,3 +65,8 @@ List of commits
 
   Willi Huber (1):
         COMP: WrapITK generates non-unique typedefs in FFT submodule
+
+Video
+-----
+
+.. youtube:: lJF2jIlEM8c
