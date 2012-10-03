@@ -72,8 +72,9 @@ def run(youtube_url):
             break
 
     if item_id is None:
-        item_id = communicator.create_item(session.token, video_filename,
+        new_item = communicator.create_item(session.token, video_filename,
                 category['folder_id'])
+        item_id = new_item['item_id']
 
     upload_token = communicator.generate_upload_token(session.token,
             item_id,
