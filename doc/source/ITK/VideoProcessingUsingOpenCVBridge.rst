@@ -165,5 +165,7 @@ Code
     ${ITK_LIBRARIES} ${OpenCV_LIBS})
 
 
-Video
+Video (ubuntu 11.10; ITK 4.2; OpenCV 2.4.2)
 ---------------------------------------------
+
+.. youtube:: B28EXtLxFlU
