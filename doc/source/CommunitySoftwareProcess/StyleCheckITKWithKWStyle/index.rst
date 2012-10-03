@@ -16,3 +16,8 @@ Detailed Instructions
 Detailed `ITK KWStyle instructions`_ are currently found on the ITK Wiki.
 
 .. _ITK KWStyle instructions: http://www.itk.org/Wiki/ITK/Release_4/Coding_Style/KWStyle
+
+Video
+-----
+
+.. youtube:: X5KkbpBgRYs
