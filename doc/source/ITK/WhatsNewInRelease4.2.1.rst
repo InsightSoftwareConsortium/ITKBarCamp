@@ -1,5 +1,5 @@
 .. index::
-  pair: release announcement, v4.2.1
+  pair: release announcement; v4.2.1
 
 What's New in Release 4.2.1
 ===========================
