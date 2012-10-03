@@ -55,7 +55,7 @@ script, first install the latest youtube-dl_:
 
   wget https://github.com/rg3/youtube-dl/raw/13e69f546c26bf35688929d36450b26da6b8d9ee/youtube-dl
   chmod +x youtube-dl
-  mv youtube-dl /usr/local/bin/
+  sudo mv youtube-dl /usr/local/bin/
 
 Next, install pydas_:
 

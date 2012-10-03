@@ -1,11 +1,11 @@
-.. index:: ! video processing 
+.. index:: ! video processing
 
-Video Processing Using ITK-OpenCVBridge module
-==============================================
+Video Processing Using ITKVideoBridgeOpenCV module
+==================================================
 
 Description
 -----------
-  Process a video using ITK image filters: itk::Image  <=>  cv::Mat
+  Process a video using ITK image filters: `itk::Image` <=> `cv::Mat`.
 
 Code
 ----
@@ -24,13 +24,14 @@ Code
 
   // Process a single frame of video and return the resulting frame
   cv::Mat processFrame( const cv::Mat& inputImage )
-  {
-    typedef   unsigned char                          InputPixelType;
-    typedef   float                                  RealPixelType;
-    typedef   unsigned char                          OutputPixelType;
-    typedef itk::Image< InputPixelType,  2 >         InputImageType;
-    typedef itk::Image< RealPixelType,   2 >         RealImageType;
-    typedef itk::Image< OutputPixelType, 2 >         OutputImageType;
+    {
+    const unsigned int Dimension = 2;
+    typedef unsigned char                            InputPixelType;
+    typedef float                                    RealPixelType;
+    typedef unsigned char                            OutputPixelType;
+    typedef itk::Image< InputPixelType,  Dimension > InputImageType;
+    typedef itk::Image< RealPixelType,   Dimension > RealImageType;
+    typedef itk::Image< OutputPixelType, Dimension > OutputImageType;
     typedef itk::OpenCVImageBridge                   BridgeType;
     typedef itk::CastImageFilter< InputImageType, RealImageType >
                                                      CastFilterType;
@@ -53,14 +54,7 @@ Code
     canny->SetLowerThreshold( 1 );
     canny->SetUpperThreshold( 8 );
 
-    try
-      {
-      rescaler->Update();
-      }
-    catch( itk::ExceptionObject & excp )
-      {
-      std::cerr << excp << std::endl;
-      }
+    rescaler->Update();
 
     cv::Mat frameOut =
       BridgeType::ITKImageToCVMat< OutputImageType >(rescaler->GetOutput(),true);
@@ -68,37 +62,37 @@ Code
     frameOut.convertTo( frameOut, CV_8U );
 
     return frameOut;
-  }
+    }
 
   // Iterate through a video, process each frame, and display the result in a GUI.
   void processAndDisplayVideo(cv::VideoCapture& vidCap)
-  {
+    {
     double frameRate = vidCap.get( CV_CAP_PROP_FPS );
     int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
     int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
 
-    std::string windowName = "Exercise 2: Basic Video Filtering in OpenCV";
+    const std::string windowName = "Exercise 2: Basic Video Filtering in OpenCV";
     cv::namedWindow( windowName, CV_WINDOW_FREERATIO);
     cvResizeWindow( windowName.c_str(), width, height+50 );
 
-    unsigned delay = 1000 / frameRate;
+    const unsigned int delay = 1000 / frameRate;
 
     cv::Mat frame;
     while( vidCap.read(frame) )
-    {
+      {
       cv::Mat outputFrame = processFrame( frame );
       cv::imshow( windowName, outputFrame );
 
       if( cv::waitKey(delay) >= 0 )
-      {
+        {
         break;
+        }
       }
     }
-  }
 
   // Iterate through a video, process each frame, and save the processed video.
   void processAndSaveVideo(cv::VideoCapture& vidCap, const std::string& filename)
-  {
+    {
     double frameRate = vidCap.get( CV_CAP_PROP_FPS );
     int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
     int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
@@ -110,38 +104,54 @@ Code
 
     cv::Mat frame;
     while( vidCap.read(frame) )
-    {
+      {
       cv::Mat outputFrame = processFrame( frame );
-    writer << outputFrame;
-  }
-  }
+      writer << outputFrame;
+      }
+    }
 
   int main ( int argc, char **argv )
-  {
-    if( argc < 2 )
     {
-      std::cout << "Usage: "<< argv[0] <<" input_video output_video"<<std::endl;
-      return -1;
-    }
+    if( argc < 2 )
+      {
+      std::cout << "Usage: "<< argv[0] <<" input_video output_video" << std::endl;
+      return EXIT_FAILURE;
+      }
 
     cv::VideoCapture vidCap( argv[1] );
     if( !vidCap.isOpened() )
-    {
+      {
       std::cerr << "Unable to open video file: "<< argv[1] << std::endl;
-      return -1;
-    }
+      return EXIT_FAILURE;
+      }
 
-    if(argc < 3)
-    {
-      processAndDisplayVideo( vidCap );
-    }
+    if( argc < 3 )
+      {
+      try
+        {
+        processAndDisplayVideo( vidCap );
+        }
+      catch( itk::ExceptionObject & err )
+        {
+        std::cerr << "Error: " << err << std::endl;
+        return EXIT_FAILURE;
+        }
+      }
     else
-    {
-      processAndSaveVideo( vidCap, argv[2] );
-    }
+      {
+      try
+        {
+        processAndSaveVideo( vidCap, argv[2] );
+        }
+      catch( itk::ExceptionObject & err )
+        {
+        std::cerr << "Error: " << err << std::endl;
+        return EXIT_FAILURE;
+        }
+      }
 
-    return 0;
-  }
+    return EXIT_SUCCESS;
+    }
 
 *CMakeLists.txt*:
 
@@ -150,14 +160,10 @@ Code
   cmake_minimum_required(VERSION 2.8)
 
   find_package(ITK REQUIRED )
-  if(ITK_FOUND)
-    include(${USE_ITK_FILE})
-  endif()
+  include(${USE_ITK_FILE})
 
   find_package(OpenCV REQUIRED)
-  if(OpenCV_FOUND)
-    include_directories(${OpenCV_INCLUDE_DIRS})
-  endif()
+  include_directories(${OpenCV_INCLUDE_DIRS})
 
   add_executable(BasicVideoFilteringEx1
     BasicVideoFilteringEx1.cxx )
@@ -165,7 +171,7 @@ Code
     ${ITK_LIBRARIES} ${OpenCV_LIBS})
 
 
-Video (ubuntu 11.10; ITK 4.2; OpenCV 2.4.2)
----------------------------------------------
+Video (Ubuntu 11.10; ITK 4.2; OpenCV 2.4.2)
+-------------------------------------------
 
 .. youtube:: B28EXtLxFlU
