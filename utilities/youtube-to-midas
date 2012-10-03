@@ -9,6 +9,7 @@ Dependencies:
 * `pidas <http://github.com/midasplatform/pydas>`_
 """
 
+import argparse
 import hashlib
 import os
 import subprocess
@@ -16,7 +17,7 @@ import sys
 
 import pydas
 
-def run(youtube_url):
+def run(youtube_url, email=None, api_key_file=None):
     # download the video
     video_filename = subprocess.check_output(['youtube-dl', '--title',
         '--get-filename', '--prefer-free-formats', youtube_url])
@@ -26,8 +27,13 @@ def run(youtube_url):
 
     # connect to Midas
     midas_url = 'http://midas3.kitware.com/midas/'
-    print('Please enter your login information for ' + midas_url)
-    token = pydas.login(url=midas_url)
+    if not api_key_file:
+        print('Please enter your login information for ' + midas_url)
+        pydas.login(url=midas_url, email=email)
+    else:
+        api_key = api_key_file.readline()
+        api_key = api_key.strip()
+        pydas.login(url=midas_url, email=email, api_key=api_key)
     session = pydas.session
     communicator = session.communicator
 
@@ -89,8 +95,13 @@ def run(youtube_url):
 
 
 if __name__ == '__main__':
-    usage = 'Usage: ' + sys.argv[0] + ' <YouTubeURL>'
-    if len(sys.argv) < 2:
-        print(usage)
-        sys.exit(1)
-    run(sys.argv[1])
+    parser = argparse.ArgumentParser(description='Download ITK video from YouTube' \
+        + ' and upload to Midas.')
+    parser.add_argument('youtube_url',
+            help='A YouTube URL with the video.  Tip: surround with quotes in the shell!')
+    parser.add_argument('--api-key-file', '-k', type=argparse.FileType('r'),
+            help="A file that contains your user's API key.")
+    parser.add_argument('--email', '-e',
+            help="Email address associated with your Midas account.")
+    args = parser.parse_args()
+    run(args.youtube_url, email=args.email, api_key_file=args.api_key_file)
