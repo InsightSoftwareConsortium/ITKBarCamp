@@ -6,7 +6,7 @@ Midas.
 Dependencies:
 
 * `youtube-dl <http://rg3.github.com/youtube-dl/>`_
-* `pidas <http://github.com/midasplatform/pydas>`_
+* `pydas <http://github.com/midasplatform/pydas>`_
 """
 
 import argparse
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     parser.add_argument('youtube_url',
             help='A YouTube URL with the video.  Tip: surround with quotes in the shell!')
     parser.add_argument('--api-key-file', '-k', type=argparse.FileType('r'),
-            help="A file that contains your user's API key.")
+            help="A file that contains your Midas user's API key.")
     parser.add_argument('--email', '-e',
             help="Email address associated with your Midas account.")
     args = parser.parse_args()
