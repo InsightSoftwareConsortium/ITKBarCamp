@@ -11,7 +11,7 @@
 
 // Process a single frame of video and return the resulting frame
 cv::Mat processFrame( const cv::Mat& inputImage )
-  {
+{
   const unsigned int Dimension = 2;
   typedef unsigned char                            InputPixelType;
   typedef float                                    RealPixelType;
@@ -49,14 +49,14 @@ cv::Mat processFrame( const cv::Mat& inputImage )
   frameOut.convertTo( frameOut, CV_8U );
 
   return frameOut;
-  }
+}
 
 // Iterate through a video, process each frame, and display the result in a GUI.
 void processAndDisplayVideo(cv::VideoCapture& vidCap)
-  {
-  double frameRate = vidCap.get( CV_CAP_PROP_FPS );
-  int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
-  int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
+{
+  const double frameRate = vidCap.get( CV_CAP_PROP_FPS );
+  const int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
+  const int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
 
   const std::string windowName = "Exercise 2: Basic Video Filtering in OpenCV";
   cv::namedWindow( windowName, CV_WINDOW_FREERATIO);
@@ -75,16 +75,16 @@ void processAndDisplayVideo(cv::VideoCapture& vidCap)
       break;
       }
     }
-  }
+}
 
 // Iterate through a video, process each frame, and save the processed video.
 void processAndSaveVideo(cv::VideoCapture& vidCap, const std::string& filename)
-  {
-  double frameRate = vidCap.get( CV_CAP_PROP_FPS );
-  int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
-  int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
+{
+  const double frameRate = vidCap.get( CV_CAP_PROP_FPS );
+  const int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
+  const int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
 
-  int fourcc = CV_FOURCC('D','I','V','X');
+  const int fourcc = CV_FOURCC('D','I','V','X');
 
   cv::VideoWriter writer( filename, fourcc, frameRate,
                           cv::Size(width, height) );
@@ -95,13 +95,13 @@ void processAndSaveVideo(cv::VideoCapture& vidCap, const std::string& filename)
     cv::Mat outputFrame = processFrame( frame );
     writer << outputFrame;
     }
-  }
+}
 
 int main ( int argc, char **argv )
-  {
+{
   if( argc < 2 )
     {
-    std::cout << "Usage: "<< argv[0] <<" input_video output_video" << std::endl;
+    std::cout << "Usage: "<< argv[0] <<" input_video [output_video]" << std::endl;
     return EXIT_FAILURE;
     }
 
@@ -138,5 +138,5 @@ int main ( int argc, char **argv )
     }
 
   return EXIT_SUCCESS;
-  }
+}
 
