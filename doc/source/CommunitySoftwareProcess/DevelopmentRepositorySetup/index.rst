@@ -36,5 +36,10 @@ many nice things, such as
   with `git gerrit-push`.
 * Provide generally useful tips configuring Git.
 
+Video
+-----
+
+.. youtube:: YRZCjY4yOx4
+
 .. _Git: http://git-scm.org/
 .. _Gerrit: http://review.source.kitware.com/
