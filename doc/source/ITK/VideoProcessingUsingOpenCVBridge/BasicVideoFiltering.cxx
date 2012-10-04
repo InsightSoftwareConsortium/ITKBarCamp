@@ -101,7 +101,7 @@ int main ( int argc, char **argv )
 {
   if( argc < 2 )
     {
-    std::cout << "Usage: "<< argv[0] <<" input_video [output_video]" << std::endl;
+    std::cout << "Usage: "<< argv[0] <<" input_video [output_video.avi]" << std::endl;
     return EXIT_FAILURE;
     }
 
