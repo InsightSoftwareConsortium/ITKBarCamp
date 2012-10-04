@@ -8,7 +8,7 @@ Contents:
 
    HelloWorld.rst
    WhatsNewInRelease4.2.1.rst
-   VideoProcessingUsingOpenCVBridge.rst
+   VideoProcessingUsingOpenCVBridge/index.rst
    LungNoduleSegmentationWithLSTK.rst
 
    Wanted.rst
