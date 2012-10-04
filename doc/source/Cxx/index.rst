@@ -7,6 +7,7 @@ Contents:
    :maxdepth: 2
 
    HelloWorld.rst
+   CommandLineUsage.rst
    CommandLineArguments.rst
    Macros.rst
 
