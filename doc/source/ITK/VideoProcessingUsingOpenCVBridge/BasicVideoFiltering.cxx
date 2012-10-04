@@ -84,7 +84,7 @@ void processAndSaveVideo(cv::VideoCapture& vidCap, const std::string& filename)
   const int width = vidCap.get( CV_CAP_PROP_FRAME_WIDTH );
   const int height = vidCap.get( CV_CAP_PROP_FRAME_HEIGHT );
 
-  const int fourcc = CV_FOURCC('D','I','V','X');
+  const int fourcc = CV_FOURCC('X','V','I','D');
 
   cv::VideoWriter writer( filename, fourcc, frameRate,
                           cv::Size(width, height) );
