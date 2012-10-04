@@ -61,12 +61,54 @@ Creating Directories
 * mkdir
 * rmdir
 
+The two commands above will create and remove directories in the file system.
+
+Removing Files
+--------------
+
+The rm command will remove files and directories from the file system. You must Fear this command, or at least respect it.
+
+* rm
+* rm -r
+
+The -r option of the rm command is particularly dangerous. It removes the
+content of a directory and all its subdirectories. Normally there is not a way
+of undoing this delete. Therefore, you must verify your current location in the
+file system before you use this command. Of course, you also want to verify
+that you really want to delete that directory and its content.
+
+Our conscience is now clear,
+whatever happens to you, remember that we told you so !
+
+Video 3
+-------
+
+You can see the video of this example at:
+
+   .. youtube::  C_YoCSvttc0
+
+
+
 Copying, Moving, Deleting files
 -------------------------------
 
 * cp
 * mv
 * rm
+
+along with their recursive options, that must be used very carefully since they can be dangerous
+
+* cp -r
+* rm -r
+
+
+Video 4
+-------
+
+You can see the video of this example at:
+
+   .. youtube::  jjdRlapJa2w
+
 
 
 Moving Through Directories
@@ -86,7 +128,7 @@ Symbolic Links
 Listing Files
 -------------
 
-* wc
+* ls
 
 
 Counting Chars, Words, Lines
