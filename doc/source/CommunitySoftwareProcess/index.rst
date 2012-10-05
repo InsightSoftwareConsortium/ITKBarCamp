@@ -6,6 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   DevelopmentRepositorySetup/index.rst
    StyleCheckITKWithKWStyle/index.rst
    TestAReleaseCandidate/index.rst
 
