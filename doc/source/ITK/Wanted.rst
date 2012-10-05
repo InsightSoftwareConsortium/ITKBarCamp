@@ -1,28 +1,21 @@
 Wanted Sessions
 ===============
 
-* Filtering
+* Pipeline
 
-  * Smoothing
+  * Connect a pipeline
+  * Update a pipeline
 
-    * Anisotropic Smoothing
+* Data Structures
 
-  * Canny Edge Detection
+  * Image
+  * ImageRegion
+  * Mesh
+  * PointSet
 
-* Segmentation
-
-  * Region Growing
-  * Level Sets
-
-* File Formats
-* DICOM
-* Image Orientation
-* Parameter Tuning
-* Display
-
-  * The Five common errors in image display
-
-    * Unsigned short
-    * Wrong byte swapping
-    * Wrong endianness
-    * Bad dimensions (number of pixels in X versus Y)
+* ImageIO
+* Factories
+* ::New()
+* SmartPointer
+* Controlling the number of threads
+* Object ModifiedTime
