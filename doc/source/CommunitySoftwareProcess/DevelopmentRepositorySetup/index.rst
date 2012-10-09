@@ -1,4 +1,4 @@
-.. index:: Git
+.. index:: Git, Gerrit
 
 Development Repository Setup
 ============================

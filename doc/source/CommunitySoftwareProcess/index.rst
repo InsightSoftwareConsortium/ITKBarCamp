@@ -7,6 +7,7 @@ Contents:
    :maxdepth: 2
 
    DevelopmentRepositorySetup/index.rst
+   HowToPerformAGerritReview/index.rst
    StyleCheckITKWithKWStyle/index.rst
    TestAReleaseCandidate/index.rst
 
