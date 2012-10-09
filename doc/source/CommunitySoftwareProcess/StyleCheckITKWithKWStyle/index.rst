@@ -1,5 +1,7 @@
 .. index:: KWStyle
 
+.. _Style Check ITK with KWStyle:
+
 Style Check ITK with KWStyle
 ============================
 
@@ -21,3 +23,9 @@ Video
 -----
 
 .. youtube:: X5KkbpBgRYs
+
+See also
+--------
+
+* :ref:`Submit a Patch to Gerrit`
+* :ref:`Perform a Gerrit Review`

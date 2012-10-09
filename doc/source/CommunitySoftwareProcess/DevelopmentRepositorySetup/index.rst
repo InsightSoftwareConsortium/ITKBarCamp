@@ -1,5 +1,7 @@
 .. index:: Git, Gerrit
 
+.. _Development Repository Setup:
+
 Development Repository Setup
 ============================
 
@@ -43,3 +45,8 @@ Video
 
 .. _Git: http://git-scm.org/
 .. _Gerrit: http://review.source.kitware.com/
+
+See also
+--------
+
+* :ref:`Perform a Gerrit Review`

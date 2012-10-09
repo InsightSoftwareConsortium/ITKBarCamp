@@ -1,7 +1,9 @@
 .. index:: Gerrit
 
-How To Perform A Gerrit Review
-==============================
+.. _Perform a Gerrit Review:
+
+Perform a Gerrit Review
+=======================
 
 Description
 -----------
@@ -42,7 +44,7 @@ Review* score.  The *Verified* score refers to whether the patch set builds
 without new warnings or errors and whether the tests pass or fail.  Verification
 is possible either by copy/pasting the *checkout* line on the front page of the
 topic, pasting into a local repository, building, and testing, or by looking at
-the output of the CDash@Home builds for a patchset.  The *Code
+the output of the `CDash@Home` builds for a patchset.  The *Code
 Review* score is a reflection of the reviewer's reading of the code and
 indicates algorithm correctness, style compliance, test coverage, etc.
 
@@ -50,33 +52,33 @@ Rating descriptions:
 
 **Verified**
 
-+1
+*+1*
   Everything builds with no new warnings or errors.  All tests pass.
 
-0
+*0*
   Build/test status of the patch set was not examined.
 
--1
+*-1*
   Build warnings, build failures, or test failures occurred.  Please remark on
   what was observed in the overall patch comment.
 
 **Code Review**
 
-+2
+*+2*
   Everything looks good -- ready to merge.
 
-+1
+*+1*
   Everything looks good, but the reviewer is not very knowledgeable in the given
   area, a thorough review was not performed, or another community member would
   likely have comments on the patch set and should give a review.
 
-0
+*0*
   The code was not examined.
 
--1
+*-1*
   Some issues were identified in the code that should be addressed.
 
--2
+*-2*
   There are fundamental issues with the patch, and they either need to be fixed
   or the patch abandoned.
 
@@ -100,3 +102,8 @@ Video
 -----
 
 .. youtube:: spty2AoOWew
+
+See also
+--------
+
+* :ref:`Development Repository Setup`
