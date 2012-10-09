@@ -9,7 +9,7 @@ Wanted Sessions
 
 * Gerrit
 
-  * Reply to review comments
+  * Reply to reviewer comments
   * Upload binary data like image files
   * Get your patch merged
   * Commit organization

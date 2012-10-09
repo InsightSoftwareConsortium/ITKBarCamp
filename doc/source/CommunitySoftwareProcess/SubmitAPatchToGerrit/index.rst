@@ -22,6 +22,8 @@ lifecycle, such as :ref:`setting up your local repository for development
 Video
 -----
 
+.. youtube:: ScfQH4lzDaY
+
 See also
 --------
 
