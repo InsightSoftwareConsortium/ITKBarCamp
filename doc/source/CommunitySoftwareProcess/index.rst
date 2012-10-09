@@ -8,6 +8,7 @@ Contents:
 
    DevelopmentRepositorySetup/index.rst
    PerformAGerritReview/index.rst
+   SubmitAPatchToGerrit/index.rst
    StyleCheckITKWithKWStyle/index.rst
    TestAReleaseCandidate/index.rst
 

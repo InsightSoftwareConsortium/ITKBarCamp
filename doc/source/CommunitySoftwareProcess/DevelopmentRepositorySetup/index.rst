@@ -49,4 +49,4 @@ Video
 See also
 --------
 
-* :ref:`Perform A Gerrit Review`
+* :ref:`Perform a Gerrit Review`

@@ -1,8 +1,8 @@
 .. index:: Gerrit
 
-.. _Perform A Gerrit Review:
+.. _Perform a Gerrit Review:
 
-Perform A Gerrit Review
+Perform a Gerrit Review
 =======================
 
 Description
