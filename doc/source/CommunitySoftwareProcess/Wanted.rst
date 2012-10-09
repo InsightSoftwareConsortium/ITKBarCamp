@@ -10,8 +10,12 @@ Wanted Sessions
 * Gerrit
 
   * Submitting a patch
-  * Making a review
-  * Change set
+  * Reply to review comments
+  * Upload binary data like image files
+  * Get your patch merged
+  * Commit organization
+  * Rebase a commit
+  * Deal with merge conflicts
 
 * Wiki
 
