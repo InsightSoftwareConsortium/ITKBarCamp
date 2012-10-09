@@ -1,5 +1,7 @@
 .. index:: Gerrit
 
+.. _Perform A Gerrit Review:
+
 Perform A Gerrit Review
 =======================
 
@@ -42,7 +44,7 @@ Review* score.  The *Verified* score refers to whether the patch set builds
 without new warnings or errors and whether the tests pass or fail.  Verification
 is possible either by copy/pasting the *checkout* line on the front page of the
 topic, pasting into a local repository, building, and testing, or by looking at
-the output of the CDash@Home builds for a patchset.  The *Code
+the output of the `CDash@Home` builds for a patchset.  The *Code
 Review* score is a reflection of the reviewer's reading of the code and
 indicates algorithm correctness, style compliance, test coverage, etc.
 
@@ -100,3 +102,8 @@ Video
 -----
 
 .. youtube:: spty2AoOWew
+
+See also
+--------
+
+* :ref:`Development Repository Setup`

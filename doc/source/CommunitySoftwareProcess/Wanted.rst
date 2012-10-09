@@ -9,7 +9,6 @@ Wanted Sessions
 
 * Gerrit
 
-  * Submitting a patch
   * Reply to review comments
   * Upload binary data like image files
   * Get your patch merged
