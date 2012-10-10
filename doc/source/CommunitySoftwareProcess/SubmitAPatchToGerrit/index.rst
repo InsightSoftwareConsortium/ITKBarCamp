@@ -27,6 +27,7 @@ Video
 See also
 --------
 
+* :ref:`Add Binary Data to a Patch`
 * :ref:`Development Repository Setup`
 * :ref:`Perform a Gerrit Review`
 
