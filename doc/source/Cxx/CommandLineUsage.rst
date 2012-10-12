@@ -121,10 +121,61 @@ Moving Through Directories
 
 
 
+Hard Links
+----------
+
+Hard links are a way of having a file appear in two directories and to have
+alternative filenames for the same content of bytes stored in disk.
+
+* Hard links can only be created for files.
+* Hard links can not be created for directories.
+
+
+Examples
+
+::
+
+  ln  /home/me/directoryA/myFile01.txt   /home/me/directoryB/anotherName.txt
+
+This example creates a second filename "anotherName.txt" in the "directoryB" for
+the ''content'' of the file myFile01.txt.
+
+The new filename "anotherName.txt" will link to the content even if the initial
+"myFile01.txt" filename is deleted.
+
+
 Symbolic Links
 --------------
 
-* ln
+* Symbolic Links are a second name that is associated with an existing filename.
+
+* Symbolic links entirely depend on the original filename. If that original
+  filename is deleted, then the symbolic link becomes a "dangling" link and it
+  is unusable.
+
+* Symbolic links can be created for files and directories.
+
+Examples
+
+::
+
+  ln  -s /home/me/directoryA/myFile01.txt   /home/me/directoryB/anotherName.txt
+
+  ln  -s /home/me/directoryA/myFile01.txt   /home/me/directoryB/
+
+  ln  -s /home/me/directoryA    /home/me/directoryC
+
+
+* The first example creates an alias name for myFile01.txt in another directory.
+* The second example creates a link with the same filename in another directory.
+* The third example creates a link to directoryA under the name of directoryC.
+
+The path to the original file or directory must be provided in a form that
+makes sense from the point of view of the location of the destination name.
+This means that the original name must be specified as one of the following:
+
+* An absolute path, or
+* A path relative to the location of the destination name
 
 
 Listing Files
