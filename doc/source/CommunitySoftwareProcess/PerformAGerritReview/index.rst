@@ -107,3 +107,5 @@ See also
 --------
 
 * :ref:`Development Repository Setup`
+
+.. _ITK patch submission process: http://www.itk.org/Wiki/ITK/Git/Develop

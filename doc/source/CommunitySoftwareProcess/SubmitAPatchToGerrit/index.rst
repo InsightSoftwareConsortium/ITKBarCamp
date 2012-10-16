@@ -32,4 +32,3 @@ See also
 * :ref:`Perform a Gerrit Review`
 
 .. _ITK patch submission process: http://www.itk.org/Wiki/ITK/Git/Develop
-
