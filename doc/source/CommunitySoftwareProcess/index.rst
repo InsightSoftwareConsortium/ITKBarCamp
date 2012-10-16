@@ -9,6 +9,7 @@ Contents:
    AddBinaryDataToAPatch/index.rst
    DevelopmentRepositorySetup/index.rst
    PerformAGerritReview/index.rst
+   RespondToGerritComments/index.rst
    SubmitAPatchToGerrit/index.rst
    StyleCheckITKWithKWStyle/index.rst
    TestAReleaseCandidate/index.rst
