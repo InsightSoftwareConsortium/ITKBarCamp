@@ -7,9 +7,9 @@ Respond to Gerrit Comments
 
 Description
 -----------
-  After `submitting a patch <Submit a Patch to Gerrit>`_ to the ITK
-  Gerrit Code Review instance, another community member will `perform a review
-  <Perform a Gerrit Review>`_ and usually find issues to address.  In this
+  After :ref:`submitting a patch <Submit a Patch to Gerrit>` to the ITK
+  Gerrit Code Review instance, another community member will :ref:`perform a review
+  <Perform a Gerrit Review>` and usually find issues to address.  In this
   session, we go through an example and tips on how to reply to the reviewer's
   comments and upload a new patch set that addresses those comments.
   The entire `ITK patch submission process`_ is covered concisely on the Wiki.
