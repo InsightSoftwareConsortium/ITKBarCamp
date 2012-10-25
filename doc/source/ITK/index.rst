@@ -7,8 +7,9 @@ Contents:
    :maxdepth: 2
 
    HelloWorld/index.rst
-   WhatsNewInRelease4.2.1.rst
-   VideoProcessingUsingOpenCVBridge/index.rst
    LungNoduleSegmentationWithLSTK.rst
+   WhatsNewInRelease4.2.1.rst
+   WriteMultiThreadedCode/index.rst
+   VideoProcessingUsingOpenCVBridge/index.rst
 
    Wanted.rst
