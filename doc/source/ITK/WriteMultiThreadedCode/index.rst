@@ -145,6 +145,8 @@ performance reasons.
 Video
 -----
 
+.. youtube:: aih7O1zQook
+
 See also
 --------
 
@@ -160,7 +162,7 @@ See also
 .. _the implementation of the CannyEdgeDetectionImageFilter: http://itk.org/gitweb?p=ITK.git;a=blob;f=Modules/Filtering/ImageFeature/include/itkCannyEdgeDetectionImageFilter.hxx;h=a10756b741851f8611c2ead7358f6595027a5b48;hb=HEAD#l218
 .. _thread-safe: http://en.wikipedia.org/wiki/Thread_safety
 .. _thread-local storage: http://en.wikipedia.org/wiki/Thread-local_storage
-.. _`itk::SimpleFastMutexLock`: http://en.wikipedia.org/wiki/Thread-local_storage
+.. _`itk::SimpleFastMutexLock`: http://www.itk.org/Doxygen/html/classitk_1_1SimpleFastMutexLock.html
 .. _default ImageSource implementation of GenerateData(): http://itk.org/gitweb?p=ITK.git;a=blob;f=Modules/Core/Common/include/itkImageSource.hxx;h=b52b4949e68ad311e307c93b0ec25aa93704bdf3;hb=HEAD#l251
 .. _BeforeThreadedGenerateData(): http://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html#a3feaf3f80b0339277b2f3502140031f8
 .. _AfterThreadedGenerateData(): http://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html#ac1967c5c2e3cbdbf5ae6d1f6c916790d
@@ -171,4 +173,4 @@ See also
 .. _a range specified by Standard Library iterators: http://www.itk.org/Doxygen/html/classitk_1_1ThreadedIteratorRangePartitioner.html
 .. _`itk::ImageSource`: http://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html
 .. _friend class: http://en.wikipedia.org/wiki/Friend_class
-.. _cell counting example: file:///home/matt/progs/itk_examples_build/html/Examples/Core/Common/DoDataParallelThreading/DoDataParallelThreading.html
+.. _cell counting example: http://itk.org/ITKExamples/Examples/Core/Common/DoDataParallelThreading/DoDataParallelThreading.html
