@@ -11,5 +11,6 @@ Contents:
    WhatsNewInRelease4.2.1.rst
    WriteMultiThreadedCode/index.rst
    VideoProcessingUsingOpenCVBridge/index.rst
+   ConstructITKModule/index.rst
 
    Wanted.rst
