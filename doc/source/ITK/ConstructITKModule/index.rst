@@ -43,6 +43,4 @@ Code
 
 Video
 -----
-
-.. youtube:: vY42uhz1hTk
-
+.. youtube:: 3ALPKujL0Gk
