@@ -8,5 +8,6 @@ Contents:
 
    CleanCodeTypedefs.rst
    UnitTesting.rst
+   DashboardSubmission/index.rst
 
    Wanted.rst
