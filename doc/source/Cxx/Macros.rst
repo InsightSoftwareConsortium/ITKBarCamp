@@ -211,7 +211,7 @@ The C++ preprocessor will expand this code to become:
       return 0;
     }
 
-Notice the use of the "\" at the end of the lines in the macro definition. They
+Notice the use of the "\\" at the end of the lines in the macro definition. They
 are needed because in principle a Macro definition ends at the end of the line.
 Therefore, if we want to write multi-line macros, we need to "escape" the end
 of the line character.
@@ -242,7 +242,7 @@ Since macros are expanded by the pre-processor before the code is passed to the
 compiler, it is possible to use them as a way of inserting some lines of code
 that otherwise should have been put in a function. This is usually called
 "inlining". What is interesting about using inlining is the fact that the code
-will run faster at execution time because instead of havig to invoke a function
+will run faster at execution time because instead of having to invoke a function
 and pass arguments and returns values via the stack, the entire process
 actually happens as if the lines of code were inserted in place... indeed they
 are inserted in place.
@@ -280,7 +280,7 @@ are inserted in place.
     }
 
 In this case the isDivisibleByThree() macro, takes more the look of a function.
-It is expanded by replacign the argument into the macro expression and putting
+It is expanded by replacing the argument into the macro expression and putting
 it inline. This is particularly interesting for very simply operations, for
 which the overhead of pushing and poping values from the stack will be large
 compared to the actual computation performed by the function.
@@ -313,4 +313,3 @@ Video 4
 You can see the video of this example at:
 
    .. youtube:: uz_2EVcXm-w
-
