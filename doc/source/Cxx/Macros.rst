@@ -313,6 +313,3 @@ Video 4
 You can see the video of this example at:
 
    .. youtube:: uz_2EVcXm-w
-
-
-..  LocalWords:  poping isDivisibleByThree uz EVcXm
