@@ -13,7 +13,7 @@ Description
 How
 ---
 
-In a bash shell with Git_
+In a `bash shell`_ with Git_
 
 .. code-block:: bash
 
@@ -45,6 +45,7 @@ Video
 
 .. _Git: http://git-scm.org/
 .. _Gerrit: http://review.source.kitware.com/
+.. _bash shell: https://openhatch.org/missions/windows-setup/open-git-bash-prompt
 
 See also
 --------
