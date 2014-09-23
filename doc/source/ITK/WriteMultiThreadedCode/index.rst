@@ -173,4 +173,4 @@ See also
 .. _a range specified by Standard Library iterators: http://www.itk.org/Doxygen/html/classitk_1_1ThreadedIteratorRangePartitioner.html
 .. _`itk::ImageSource`: http://www.itk.org/Doxygen/html/classitk_1_1ImageSource.html
 .. _friend class: http://en.wikipedia.org/wiki/Friend_class
-.. _cell counting example: http://itk.org/ITKExamples/Examples/Core/Common/DoDataParallelThreading/DoDataParallelThreading.html
+.. _cell counting example: http://itk.org/ITKExamples/src/Core/Common/DoDataParallelThreading/Documentation.html
